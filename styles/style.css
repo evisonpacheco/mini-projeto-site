@@ -21,7 +21,7 @@ header{
     text-align: center;
     color: white;
     padding: 10px;
-    
+    font-family: 'Courier New', Courier, monospace;
 }
 header>p{
     text-align: center;
