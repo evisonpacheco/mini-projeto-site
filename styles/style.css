@@ -67,6 +67,10 @@ footer>p{
     text-align: center;
     margin: 0px;
 }
+footer>p>a{
+    color:white;
+    text-decoration: underline;
+}
 .middle{
     text-align: center;
 }
