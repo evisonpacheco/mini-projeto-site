@@ -25,16 +25,19 @@
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Android', cursive;
 }
-
 body{
     font-family: var(--fonte-padrao);
     background-color: var(--color0);
+}
+h1{
+    text-shadow: 1px 1px var(--color-shadow);
+    font-family: var(--fonte-padrao);
+    font-size: 2.5em;
 }
 h2{
     font-family: var(--fonte-android);
     text-shadow: 1px 1px var(--color-shadow);
     color: var(--color4);
-    margin: 2% 0%;
 }
 h3{
     font-family: var(--fonte-android);
@@ -42,47 +45,59 @@ h3{
     color: var(--color4);
     text-shadow: 1px 1px var(--color-shadow);
     padding: 5px;
-    margin: 2% 0%;
 }
 p{
     text-align: justify;
     text-indent: 40px;
     padding: 1%;
+    margin: 15px 0;
+    line-height: 1.5em;
+}
+main strong{
+    color: var(--color3);
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color5);
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--color3);
+}
+main a::after{
+    content: ' \21d7';
 }
 header{
-    background-image: linear-gradient(to bottom, var(--color1), var(--color5));
+    background-image: linear-gradient(to bottom, var(--color3), var(--color5));
+    box-shadow: 0 0 10px var(--color-shadow);
     text-align: center;
     color: white;
-    padding: 10px;
-    font-family: var(--fonte-destaque);
-    box-shadow: 0 0 10px var(--color-shadow);
+    padding: 3%;
+}
+header>p{
+    text-align: center;
 }
 nav{
     min-width: 300px;
     max-width: 1200px;
     background-color: var(--color5);
     text-align: center;
-    padding: 5px 2%;
+    padding: 0.6% 0;
     margin: 1% auto 0;
     border-radius: 20px 20px 0 0;
 }
 nav>a{
     color: white;
     text-decoration: none;
-    margin: 3%;
+    padding: 0.6% 2%;
     font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
 }
 nav>a:hover{
-    text-decoration: underline;
-}
-header>p{
-    text-align: center;
-    color: white;
-}
-h1{
-    padding: 0px;
-    margin: 0px;
-    text-shadow: 1px 1px var(--color-shadow);
+    background-color: var(--color4);
+    
 }
 main{
     min-width: 300px;
@@ -97,7 +112,7 @@ img{
     width: 100%;
 }
 .small{
-    width: 35%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
