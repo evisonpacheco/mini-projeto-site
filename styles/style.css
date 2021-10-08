@@ -25,16 +25,19 @@
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Android', cursive;
 }
-
 body{
     font-family: var(--fonte-padrao);
     background-color: var(--color0);
+}
+h1{
+    text-shadow: 1px 1px var(--color-shadow);
+    font-family: var(--fonte-padrao);
+    font-size: 2.5em;
 }
 h2{
     font-family: var(--fonte-android);
     text-shadow: 1px 1px var(--color-shadow);
     color: var(--color4);
-    margin: 2% 0%;
 }
 h3{
     font-family: var(--fonte-android);
@@ -42,12 +45,28 @@ h3{
     color: var(--color4);
     text-shadow: 1px 1px var(--color-shadow);
     padding: 5px;
-    margin: 2% 0%;
 }
 p{
     text-align: justify;
     text-indent: 40px;
     padding: 1%;
+    margin: 15px 0;
+    line-height: 1.5em;
+}
+main strong{
+    color: var(--color3);
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color5);
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--color3);
+}
+main a::after{
+    content: ' \21d7';
 }
 header{
     background-image: linear-gradient(to bottom, var(--color3), var(--color5));
@@ -55,11 +74,6 @@ header{
     text-align: center;
     color: white;
     padding: 3%;
-}
-h1{
-    text-shadow: 1px 1px var(--color-shadow);
-    font-family: var(--fonte-padrao);
-    font-size: 2.5em;
 }
 header>p{
     text-align: center;
