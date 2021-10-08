@@ -29,12 +29,12 @@
 body{
     font-family: var(--fonte-padrao);
     background-color: var(--color0);
-    margin: 0px;
 }
 h2{
     font-family: var(--fonte-android);
     text-shadow: 1px 1px var(--color-shadow);
     color: var(--color4);
+    margin: 2% 0%;
 }
 h3{
     font-family: var(--fonte-android);
@@ -42,10 +42,12 @@ h3{
     color: var(--color4);
     text-shadow: 1px 1px var(--color-shadow);
     padding: 5px;
+    margin: 2% 0%;
 }
 p{
     text-align: justify;
     text-indent: 40px;
+    padding: 1%;
 }
 header{
     background-image: linear-gradient(to bottom, var(--color1), var(--color5));
@@ -53,14 +55,16 @@ header{
     color: white;
     padding: 10px;
     font-family: var(--fonte-destaque);
-    margin: 0px;
+    box-shadow: 0 0 10px var(--color-shadow);
 }
 nav{
-    margin: 0px;
+    min-width: 300px;
+    max-width: 1200px;
     background-color: var(--color5);
     text-align: center;
-    padding: 5px;
-    margin: 1% auto;
+    padding: 5px 2%;
+    margin: 1% auto 0;
+    border-radius: 20px 20px 0 0;
 }
 nav>a{
     color: white;
@@ -81,13 +85,25 @@ h1{
     text-shadow: 1px 1px var(--color-shadow);
 }
 main{
+    min-width: 300px;
+    max-width: 1200px;
     background-color: white;
     padding: 2%;
-    margin:0% 10%;
-    padding: 2%;}
-.middle{
-    text-align: center;
+    margin: 0 auto 3%;
+    box-shadow: 0 0 10px var(--color-shadow);
+    border-radius: 0 0 20px 20px;
 }
+img{
+    width: 100%;
+}
+.small{
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+/*.middle{
+    text-align: center;
+}*/
 
 /* Resposibidade de vídeo foi copiar e colar, tentar entender em outra hora!*/
 figure{
@@ -100,6 +116,7 @@ figure{
     padding-bottom: 56.25%; 
     padding-top: 25px;
     height: 0;    
+    margin: 4% 0%;
 }
 .boxVideo iframe {
     position: absolute;
@@ -112,17 +129,17 @@ figure{
 .box{
     background-color: var(--color0);
     border-radius: 10px;
-    padding: 0px 0px 10px 0px;
+    padding: 0 ;
+    margin: 0 auto;
+}
+.extra{
+    padding: 5%;
 }
 .box>h4{
     background-color: var(--color4);
     color: white;
     padding: 8px;
     border-radius: 10px 10px 0px 0px;
-}
-.box>p{
-    margin: 10px;
-    padding: 0px 10px;
 }
 a{
     text-decoration: none;
