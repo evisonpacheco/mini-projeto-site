@@ -65,8 +65,8 @@ main a:hover{
     text-decoration: underline;
     color: var(--color3);
 }
-main a::after{
-    content: ' \21d7';
+.external:after{
+    content: '\21d7';
 }
 header{
     background-image: linear-gradient(to bottom, var(--color3), var(--color5));
@@ -83,7 +83,7 @@ nav{
     max-width: 1200px;
     background-color: var(--color5);
     text-align: center;
-    padding: 0.6% 0;
+    padding: 0.6% 2%;
     margin: 1% auto 0;
     border-radius: 20px 20px 0 0;
 }
@@ -116,10 +116,6 @@ img{
     display: block;
     margin: auto;
 }
-/*.middle{
-    text-align: center;
-}*/
-
 /* Resposibidade de vídeo foi copiar e colar, tentar entender em outra hora!*/
 figure{
     width: 90%; 
@@ -141,20 +137,23 @@ figure{
     height: 100%;
     margin: 0 auto;
 }
-.box{
+aside{
     background-color: var(--color0);
     border-radius: 10px;
-    padding: 0 ;
     margin: 0 auto;
+    box-shadow: 0 0 10px var(--color-shadow);
 }
-.extra{
-    padding: 5%;
-}
-.box>h4{
+aside>h4{
     background-color: var(--color4);
     color: white;
     padding: 8px;
     border-radius: 10px 10px 0px 0px;
+}
+aside > ul{
+    list-style-type: '\2714\00A0'; /* É COMPATÍVEL APENAS COM GOOGLE CHROME!!! Comando para mudar o tipo de marcador de uma list '2714' é o marcador e '00A0' é o espaço, para não deixar o marcador mt colado da palavra*/
+    list-style-position: inside; /* Comando para os marcadores da lista ficarem dentro do aside, o padrão é 'outside' */
+    columns: 2; /* Divide a lista em colunas, simples assim */
+    padding-left: 50px;
 }
 a{
     text-decoration: none;
